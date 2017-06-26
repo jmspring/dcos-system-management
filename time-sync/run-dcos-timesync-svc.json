@@ -1,0 +1,11 @@
+{
+    "id": "timesync", 
+    "cmd": "`chmod u+x dcos-timesync-svc.sh  && ./dcos-timesync-svc.sh`",
+    "cpus": 0.1,
+    "mem": 32.0,
+    "instances": 100,
+    "constraints": [["hostname", "UNIQUE"]],
+    "uris": [
+        "http://innerdot.com/images/dcos-timesync-svc.zip"
+    ]
+}
